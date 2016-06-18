@@ -1,0 +1,118 @@
+Storage\Blob\BlobRestProxy.php:        $properties->setLastModified(Utilities::rfc1123ToDateTime($d));
+Storage\Blob\BlobRestProxy.php:        $date     = Utilities::rfc1123ToDateTime($date);
+Storage\Blob\BlobRestProxy.php:        $modifiedDate = Utilities::convertToDateTime($modified);
+Storage\Blob\Models\AccessCondition.php:     * @param \DateTime $lastModified date that represents the last-modified
+Storage\Blob\Models\AccessCondition.php:     * @param \DateTime $lastModified date that represents the last-modified
+Storage\Blob\Models\AccessPolicy.php:     * @var \DateTime
+Storage\Blob\Models\AccessPolicy.php:     * @var \DateTime
+Storage\Blob\Models\AccessPolicy.php:     * @return \DateTime.
+Storage\Blob\Models\AccessPolicy.php:     * @param \DateTime $start value.
+Storage\Blob\Models\AccessPolicy.php:     * @return \DateTime.
+Storage\Blob\Models\AccessPolicy.php:     * @param \DateTime $expiry value.
+Storage\Blob\Models\AccessPolicy.php:        $array['Start']      = Utilities::convertToEdmDateTime($this->_start);
+Storage\Blob\Models\AccessPolicy.php:        $array['Expiry']     = Utilities::convertToEdmDateTime($this->_expiry);
+Storage\Blob\Models\BlobProperties.php:     * @var \DateTime
+Storage\Blob\Models\BlobProperties.php:            $date = Utilities::rfc1123ToDateTime($date);
+Storage\Blob\Models\BlobProperties.php:     * @return \DateTime.
+Storage\Blob\Models\BlobProperties.php:     * @param \DateTime $lastModified value.
+Storage\Blob\Models\ContainerACL.php:                $start        = Utilities::convertToDateTime($startString);
+Storage\Blob\Models\ContainerACL.php:                $expiry       = Utilities::convertToDateTime($expiryString);
+Storage\Blob\Models\ContainerACL.php:     * @param \DateTime $start      The time at which the Shared Access Signature
+Storage\Blob\Models\ContainerACL.php:     * @param \DateTime $expiry     The time at which the Shared Access Signature
+Storage\Blob\Models\ContainerProperties.php:     * @var \DateTime
+Storage\Blob\Models\ContainerProperties.php:     * @return \DateTime.
+Storage\Blob\Models\ContainerProperties.php:     * @param \DateTime $lastModified value.
+Storage\Blob\Models\CopyBlobResult.php:     * @var \DateTime
+Storage\Blob\Models\CopyBlobResult.php:            $result->setLastModified(Utilities::rfc1123ToDateTime($lastModified));
+Storage\Blob\Models\CopyBlobResult.php:     * @return \DateTime
+Storage\Blob\Models\CopyBlobResult.php:     * @param \DateTime $lastModified value.
+Storage\Blob\Models\CreateBlobPagesResult.php:     * @var \DateTime
+Storage\Blob\Models\CreateBlobPagesResult.php:        $date = Utilities::rfc1123ToDateTime($date);
+Storage\Blob\Models\CreateBlobPagesResult.php:     * @return \DateTime.
+Storage\Blob\Models\CreateBlobPagesResult.php:     * @param \DateTime $lastModified value.
+Storage\Blob\Models\CreateBlobSnapshotResult.php:     * A DateTime value which uniquely identifies the snapshot. 
+Storage\Blob\Models\CreateBlobSnapshotResult.php:     * @var \DateTime
+Storage\Blob\Models\CreateBlobSnapshotResult.php:            Utilities::rfc1123ToDateTime(
+Storage\Blob\Models\CreateBlobSnapshotResult.php:     * @return \DateTime
+Storage\Blob\Models\CreateBlobSnapshotResult.php:     * @param \DateTime $lastModified value.
+Storage\Blob\Models\GetBlobMetadataResult.php:     * @var \DateTime
+Storage\Blob\Models\GetBlobMetadataResult.php:        $result->setLastModified(Utilities::rfc1123ToDateTime($date));
+Storage\Blob\Models\GetBlobMetadataResult.php:     * @return \DateTime.
+Storage\Blob\Models\GetBlobMetadataResult.php:     * @param \DateTime $lastModified value.
+Storage\Blob\Models\GetContainerACLResult.php:     * @var \DateTime
+Storage\Blob\Models\GetContainerACLResult.php:     * @param \DateTime $lastModified last modification date
+Storage\Blob\Models\GetContainerACLResult.php:     * @return \DateTime.
+Storage\Blob\Models\GetContainerACLResult.php:     * @param \DateTime $lastModified value.
+Storage\Blob\Models\GetContainerPropertiesResult.php:     * @var \DateTime
+Storage\Blob\Models\GetContainerPropertiesResult.php:     * @return \DateTime.
+Storage\Blob\Models\GetContainerPropertiesResult.php:     * @param \DateTime $lastModified value.
+Storage\Blob\Models\ListBlobBlocksResult.php:     * @var \DateTime
+Storage\Blob\Models\ListBlobBlocksResult.php:            $date = Utilities::rfc1123ToDateTime($date);
+Storage\Blob\Models\ListBlobBlocksResult.php:     * @return \DateTime.
+Storage\Blob\Models\ListBlobBlocksResult.php:     * @param \DateTime $lastModified value.
+Storage\Blob\Models\ListContainersResult.php:            $date       = Utilities::rfc1123ToDateTime($date);
+Storage\Blob\Models\ListPageBlobRangesResult.php:     * @var \DateTime
+Storage\Blob\Models\ListPageBlobRangesResult.php:        $date          = Utilities::rfc1123ToDateTime($date);
+Storage\Blob\Models\ListPageBlobRangesResult.php:     * @return \DateTime.
+Storage\Blob\Models\ListPageBlobRangesResult.php:     * @param \DateTime $lastModified value.
+Storage\Blob\Models\SetBlobMetadataResult.php:     * @var \DateTime
+Storage\Blob\Models\SetBlobMetadataResult.php:        $result->setLastModified(Utilities::rfc1123ToDateTime($date));
+Storage\Blob\Models\SetBlobMetadataResult.php:     * @return \DateTime.
+Storage\Blob\Models\SetBlobMetadataResult.php:     * @param \DateTime $lastModified value.
+Storage\Blob\Models\SetBlobPropertiesResult.php:     * @var \DateTime
+Storage\Blob\Models\SetBlobPropertiesResult.php:        $result->setLastModified(Utilities::rfc1123ToDateTime($date));
+Storage\Blob\Models\SetBlobPropertiesResult.php:     * @return \DateTime.
+Storage\Blob\Models\SetBlobPropertiesResult.php:     * @param \DateTime $lastModified value.
+Storage\Common\Internal\ServiceRestProxy.php:                if ($value instanceof \DateTime) {
+Storage\Common\Internal\ServiceRestProxy.php:            if ($value instanceof \DateTime) {
+Storage\Common\Internal\Utilities.php:     * Converts a given date string into \DateTime object
+Storage\Common\Internal\Utilities.php:     * @return \DateTime
+Storage\Common\Internal\Utilities.php:    public static function rfc1123ToDateTime($date)
+Storage\Common\Internal\Utilities.php:        $timeZone = new \DateTimeZone('GMT');
+Storage\Common\Internal\Utilities.php:        return \DateTime::createFromFormat($format, $date, $timeZone);
+Storage\Common\Internal\Utilities.php:     *     (for DateTime check date_timestamp_get).
+Storage\Common\Internal\Utilities.php:     * Converts a DateTime object into an Edm.DaeTime value in UTC timezone,
+Storage\Common\Internal\Utilities.php:     * @param \DateTime $value The datetime value.
+Storage\Common\Internal\Utilities.php:    public static function convertToEdmDateTime($value)
+Storage\Common\Internal\Utilities.php:            $value =  self::convertToDateTime($value);
+Storage\Common\Internal\Utilities.php:        $cloned->setTimezone(new \DateTimeZone('UTC'));
+Storage\Common\Internal\Utilities.php:     * Converts a string to a \DateTime object. Returns false on failure.
+Storage\Common\Internal\Utilities.php:     * @return \DateTime
+Storage\Common\Internal\Utilities.php:    public static function convertToDateTime($value)
+Storage\Common\Internal\Utilities.php:        if ($value instanceof \DateTime) {
+Storage\Common\Internal\Utilities.php:        return new \DateTime($value, new \DateTimeZone('UTC'));
+Storage\Common\Internal\Validate.php:     * Throws exception if the provided $date is not of type \DateTime
+Storage\Common\Internal\Validate.php:        if (gettype($date) != 'object' || get_class($date) != 'DateTime') {
+Storage\Common\Internal\Validate.php:            throw new InvalidArgumentTypeException('DateTime');
+Storage\Common\Internal\Validate.php:            new \DateTime($value);
+Storage\Queue\Models\MicrosoftAzureQueueMessage.php:     * @var \DateTime
+Storage\Queue\Models\MicrosoftAzureQueueMessage.php:     * @var \DateTime
+Storage\Queue\Models\MicrosoftAzureQueueMessage.php:     * @var \DateTime
+Storage\Queue\Models\MicrosoftAzureQueueMessage.php:        $date = Utilities::rfc1123ToDateTime($timeNextVisible);
+Storage\Queue\Models\MicrosoftAzureQueueMessage.php:        $date = Utilities::rfc1123ToDateTime($expirationDate);
+Storage\Queue\Models\MicrosoftAzureQueueMessage.php:        $date = Utilities::rfc1123ToDateTime($insertionDate);
+Storage\Queue\Models\MicrosoftAzureQueueMessage.php:     * @return \DateTime.
+Storage\Queue\Models\MicrosoftAzureQueueMessage.php:     * @param \DateTime $insertionDate message contents.
+Storage\Queue\Models\MicrosoftAzureQueueMessage.php:     * @return \DateTime.
+Storage\Queue\Models\MicrosoftAzureQueueMessage.php:     * @param \DateTime $expirationDate the expiration date of the message.
+Storage\Queue\Models\MicrosoftAzureQueueMessage.php:     * @return \DateTime.
+Storage\Queue\Models\MicrosoftAzureQueueMessage.php:     * @param \DateTime $timeNextVisible next visibile time for the message.
+Storage\Queue\Models\UpdateMessageResult.php:     * @var \DateTime
+Storage\Queue\Models\UpdateMessageResult.php:     * @return \DateTime.
+Storage\Queue\Models\UpdateMessageResult.php:     * @param \DateTime $timeNextVisible A UTC date/time value that represents when 
+Storage\Queue\QueueRestProxy.php:        $date   = Utilities::rfc1123ToDateTime($timeNextVisible);
+Storage\Table\Models\EdmType.php:    const DATETIME = 'Edm.DateTime';
+Storage\Table\Models\EdmType.php:            case EdmType::DATETIME:
+Storage\Table\Models\EdmType.php:                $condition = 'instanceof \DateTime';
+Storage\Table\Models\EdmType.php:                return $value instanceof \DateTime;
+Storage\Table\Models\EdmType.php:        case EdmType::DATETIME:
+Storage\Table\Models\EdmType.php:            return Utilities::convertToEdmDateTime($value);
+Storage\Table\Models\EdmType.php:        case EdmType::DATETIME:
+Storage\Table\Models\EdmType.php:            $edmDate = Utilities::convertToEdmDateTime($value);
+Storage\Table\Models\EdmType.php:            return 'datetime\'' . $edmDate . '\'';
+Storage\Table\Models\EdmType.php:            case self::DATETIME:
+Storage\Table\Models\EdmType.php:                return Utilities::convertToDateTime($value);
+Storage\Table\Models\EdmType.php:        case $type == self::DATETIME:
+Storage\Table\Models\Entity.php:     * @return \DateTime
+Storage\Table\Models\Entity.php:     * @param \DateTime $timestamp The entity Timestamp value.
+Storage\Table\Models\Entity.php:        $this->addProperty('Timestamp', EdmType::DATETIME, $timestamp);

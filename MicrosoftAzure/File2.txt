@@ -1,0 +1,57 @@
+File.txt:Storage\Blob\BlobRestProxy.php:        $modifiedDate = Utilities::convertToDateTime($modified);
+File.txt:Storage\Blob\Models\AccessPolicy.php:        $array['Start']      = Utilities::convertToEdmDateTime($this->_start);
+File.txt:Storage\Blob\Models\AccessPolicy.php:        $array['Expiry']     = Utilities::convertToEdmDateTime($this->_expiry);
+File.txt:Storage\Blob\Models\ContainerACL.php:                $start        = Utilities::convertToDateTime($startString);
+File.txt:Storage\Blob\Models\ContainerACL.php:                $expiry       = Utilities::convertToDateTime($expiryString);
+File.txt:Storage\Common\Internal\Utilities.php:     * Converts a given date string into \DateTime object
+File.txt:Storage\Common\Internal\Utilities.php:     * Converts a DateTime object into an Edm.DaeTime value in UTC timezone,
+File.txt:Storage\Common\Internal\Utilities.php:    public static function convertToEdmDateTime($value)
+File.txt:Storage\Common\Internal\Utilities.php:            $value =  self::convertToDateTime($value);
+File.txt:Storage\Common\Internal\Utilities.php:     * Converts a string to a \DateTime object. Returns false on failure.
+File.txt:Storage\Common\Internal\Utilities.php:    public static function convertToDateTime($value)
+File.txt:Storage\Table\Models\EdmType.php:            return Utilities::convertToEdmDateTime($value);
+File.txt:Storage\Table\Models\EdmType.php:            $edmDate = Utilities::convertToEdmDateTime($value);
+File.txt:Storage\Table\Models\EdmType.php:                return Utilities::convertToDateTime($value);
+Storage\Blob\BlobRestProxy.php:        $modifiedDate = Utilities::convertToDateTime($modified);
+Storage\Blob\Models\AccessPolicy.php:     * Converts this current object to XML representation.
+Storage\Blob\Models\AccessPolicy.php:        $array['Start']      = Utilities::convertToEdmDateTime($this->_start);
+Storage\Blob\Models\AccessPolicy.php:        $array['Expiry']     = Utilities::convertToEdmDateTime($this->_expiry);
+Storage\Blob\Models\BlockList.php:     * Converts the  BlockList object to XML representation
+Storage\Blob\Models\ContainerACL.php:                $start        = Utilities::convertToDateTime($startString);
+Storage\Blob\Models\ContainerACL.php:                $expiry       = Utilities::convertToDateTime($expiryString);
+Storage\Blob\Models\ContainerACL.php:     * Converts this object to array representation for XML serialization 
+Storage\Blob\Models\ContainerACL.php:     * Converts this current object to XML representation.
+Storage\Blob\Models\SignedIdentifier.php:     * Converts this current object to XML representation.
+Storage\Common\Internal\Authentication\StorageAuthScheme.php:            // Convert header to lower case.
+Storage\Common\Internal\Authentication\StorageAuthScheme.php:        // 5. Convert all parameter names to lowercase.
+Storage\Common\Internal\Http\HttpCallContext.php:     * Converts the context object to string.
+Storage\Common\Internal\HttpFormatter.php:     * Convert a http headers array into an uniformed format for further process
+Storage\Common\Internal\Serialization\XmlSerializer.php:     * Converts a SimpleXML object to an Array recursively
+Storage\Common\Internal\Serialization\XmlSerializer.php:     * @param array     $data       Array to be converted to XML.
+Storage\Common\Internal\Utilities.php:     * Converts a SimpleXML object to an Array recursively
+Storage\Common\Internal\Utilities.php:     * @param array     $data       Array to be converted to XML
+Storage\Common\Internal\Utilities.php:     * Converts string into boolean value.
+Storage\Common\Internal\Utilities.php:     * Converts string into boolean value.
+Storage\Common\Internal\Utilities.php:     * @param bool $obj boolean value to convert.
+Storage\Common\Internal\Utilities.php:     * Converts a given date string into \DateTime object
+Storage\Common\Internal\Utilities.php:     * @param int $timestamp The unix timestamp to convert
+Storage\Common\Internal\Utilities.php:     * Converts a DateTime object into an Edm.DaeTime value in UTC timezone,
+Storage\Common\Internal\Utilities.php:    public static function convertToEdmDateTime($value)
+Storage\Common\Internal\Utilities.php:            $value =  self::convertToDateTime($value);
+Storage\Common\Internal\Utilities.php:     * Converts a string to a \DateTime object. Returns false on failure.
+Storage\Common\Internal\Utilities.php:    public static function convertToDateTime($value)
+Storage\Common\Internal\Utilities.php:     * Converts string to stream handle.
+Storage\Common\Internal\Utilities.php:     * Convert base 256 number to decimal number. 
+Storage\Common\Models\Logging.php:     * Converts this object to array with XML tags
+Storage\Common\Models\Metrics.php:     * Converts this object to array with XML tags
+Storage\Common\Models\RetentionPolicy.php:     * Converts this object to array with XML tags
+Storage\Common\Models\ServiceProperties.php:     * Converts this object to array with XML tags
+Storage\Common\Models\ServiceProperties.php:     * Converts this current object to XML representation.
+Storage\Queue\Models\QueueMessage.php:     * Converts this current object to XML representation.
+Storage\Table\Internal\IMimeReaderWriter.php:     * Given array of MIME parts in raw string, this function converts them into MIME
+Storage\Table\Internal\MimeReaderWriter.php:     * Given array of MIME parts in raw string, this function converts them into MIME
+Storage\Table\Models\EdmType.php:     * Converts the type to string if it's empty and validates the type.
+Storage\Table\Models\EdmType.php:            return Utilities::convertToEdmDateTime($value);
+Storage\Table\Models\EdmType.php:            $edmDate = Utilities::convertToEdmDateTime($value);
+Storage\Table\Models\EdmType.php:     * Converts the value into its proper type.
+Storage\Table\Models\EdmType.php:                return Utilities::convertToDateTime($value);
