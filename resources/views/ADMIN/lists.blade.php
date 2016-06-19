@@ -102,10 +102,11 @@
                     <tbody>
                         {!! Form::open(['action' => 'ManageController@listConfirm', 'role' => 'form', 'method' => 'PUT']) !!}
                             <div class="form-group">
+                                <a href="{{url('/')}}/Manage/Processed" class="btn btn-info pull-right">Move to Processed</a>
                                 <button type="submit" class="btn btn-success pull-right">Save</button>
                             </div>
 
-                        {{$i = 1}}
+                        <?php $i=1; ?>
                         @forelse ($users as $user)
                             <tr>
                                 <td>{{$i++}}</td>
