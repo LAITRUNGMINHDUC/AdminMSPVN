@@ -84,6 +84,7 @@
                         Mr. DucLTM - CM HCM Team - Duc.LaiTrunMinh@studentpartner.com <br>
                         Mr. Bach Tri - MSP Lead HCMC - v-TriBT@microsoft.com <br>
                     <p>
+                    <a href="{{url('/')}}/Manage/Processed" class="btn btn-default">Move to Processed</a>
                 </div>
             </div>
             <div class="row">
@@ -99,10 +100,9 @@
                         </tr>
                     </thead>
 
-                    <tbody>
+                    <tbody>                    	
                         {!! Form::open(['action' => 'ManageController@listConfirm', 'role' => 'form', 'method' => 'PUT']) !!}
-                            <div class="form-group">
-                                <a href="{{url('/')}}/Manage/Processed" class="btn btn-info pull-right">Move to Processed</a>
+                            <div class="form-group">                                
                                 <button type="submit" class="btn btn-success pull-right">Save</button>
                             </div>
 
