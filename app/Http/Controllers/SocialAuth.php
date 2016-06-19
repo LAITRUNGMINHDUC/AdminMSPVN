@@ -50,13 +50,13 @@ class SocialAuth extends Controller
         Session::put('Email', $email);
         Session::put('Role', "Admin");
 
-        return redirect()->action('ManageController@InProgress');
+        return redirect()->action('ManageController@listInProgress');
     }
 
     public function Login()
     {        
         $hasEmail = Session::get('email');
-        if ($hasEmail) return redirect()->action('ManageController@InProgress');
+        if ($hasEmail) return redirect()->action('ManageController@listInProgress');
     	return view('HTML.login');
     }
 }
