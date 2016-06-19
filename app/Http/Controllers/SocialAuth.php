@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Socialite;
 use Session;
+use App\Classes\CustomAzure;
 
 use App\Http\Requests;
 
@@ -35,17 +36,27 @@ class SocialAuth extends Controller
 
     	$user = Socialite::driver($provider)->user();
         $email = $user->getEmail();
-        $name = $user->getName();    	
+        $name = $user->getName();
+
+        $Azure = new CustomAzure();
+        $Query = "Email eq '$email' and Status eq 'Admin'";
+        $Result = $Azure->queryEntities(env('AZURE_MAIN_TABLE'), $Query);
+        if (empty($Result))
+        {
+            return redirect('https://msp-vietnam.azurewebsites.net')->send();
+        }
+
         Session::flush();
-        Session::put('email', $email);        
-        Session::put('name', $name);
-        return redirect()->action('StoreDatabase@Form');
+        Session::put('Email', $email);
+        Session::put('Role', "Admin");
+
+        return redirect()->action('ManageController@InProgress');
     }
 
     public function Login()
     {        
         $hasEmail = Session::get('email');
-        if ($hasEmail) return redirect('/Home');
+        if ($hasEmail) return redirect()->action('ManageController@InProgress');
     	return view('HTML.login');
     }
 }

@@ -99,6 +99,22 @@ class CustomAzure
 		return $jsonArray;	        
 	}
 
+	public function ConvertEntity($entity)
+	{
+		$jsonArray = array();
+		$arr = $entity->getProperties();
+		$tempArr = array();
+		foreach ($arr as $key => $value) {
+			if(gettype($entity->getPropertyValue($key)) != 'object'){
+				$tempArr[$key] = (string)$entity->getPropertyValue($key);                 }
+			else
+			{
+				$tempArr[$key] = serialize($entity->getPropertyValue($key));
+			}
+		}
+		return $tempArr;
+	}
+
 	public function queryEntities($tableName, $query)
 	{
 	    $filter = $query;
@@ -110,6 +126,13 @@ class CustomAzure
 	        $error_message = $e->getMessage();	        
 	    }
 	    return $this->ConvertEntities($result->getEntities());
+	}
+
+	public function deleteAndCreate()
+	{
+		$tableName = env('AZURE_MAIN_TABLE');
+		$this->tableClient->deleteTable($tableName);
+		$this->tableClient->createTable($tableName);
 	}
 }
 ?>

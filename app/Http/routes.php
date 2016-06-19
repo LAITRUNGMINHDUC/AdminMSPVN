@@ -16,20 +16,17 @@ Route::get('/', ['uses' => 'SocialAuth@Login']);
 Route::get('/Auth/Redirect/{provider}', ['uses' => 'SocialAuth@getSocialRedirect']);
 Route::get('/Auth/Handle/{provider}', ['uses' => 'SocialAuth@getSocialHandle']);
 
-Route::get('/Form', 'StoreDatabase@Form');
-Route::post('/Form/Action', ['uses' => 'StoreDatabase@Store']);
+//Chart pages --> New, Reject,...
+Route::get('/Manage', ['uses' => 'ManageController@Home']);
 
-Route::get('/Home', 'MSPController@Home');
-Route::get('/Signout', 'MSPController@Signout');
+//Process Pages
+Route::get('/Manage/InProgress', ['uses' => 'ManageController@listInProgress']);
+Route::put('/Manage/InProgress', ['uses' => 'ManageController@listConfirm']);
 
-// Route::get('/Create', ['uses' => 'TestAzure@MSPCreateTable']);
-Route::get('/QueryDuckTiny', ['uses' => 'TestAzure@MSPQuery']);
+Route::get('/Manage/Processed', ['uses'=>'ManageController@listProcessed']);
+Route::get('/Manage/Processed/{DateID}', ['uses' => 'ManageController@listDownload']);
 
-//Route::get('/Admin', ['uses' => 'MSPController@adminGUI']);
-//Route::post('/Admin', ['uses' => 'MSPController@adminProcessForm']);
-// Route::get('/Seed', ['uses' => 'TestAzure@MSPSeed']);
-
-// Route::get('/Auth/', ['uses' => 'SocialAuth@Google']);
-// Route::get('/Auth/Microsoft', ['uses' => 'SocialAuth@Microsoft']);
-
-
+//Route::get('Azure/DeleteAndCreate', ['uses' => 'ManageController@deleteAndCreate']);
+//Route::get('Azure/Init', ['uses' => 'ManageController@initVariables']);
+//Mail
+//Route::get('/Mail', ['uses' => '']);
