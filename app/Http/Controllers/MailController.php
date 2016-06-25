@@ -25,7 +25,7 @@ class MailController extends Controller
 
     	Mail::send('EMAILS.InProgress', ['Data' => $Result], function ($m) use ($Count) {
             $m->from(env('MAIL_USERNAME'), 'MSPVN Auto Sender');
-            $m->to('baokhanh.msp@outlook.com');
+            $m->to('danglebaokhanh.msp@outlook.com');
             $m->to('v-tribt@microsoft.com');
             $m->cc('viethung.msp@outlook.com');
             $m->cc('minhduc.msp@outlook.com');
