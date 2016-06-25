@@ -25,11 +25,11 @@ class MailController extends Controller
 
     	Mail::send('EMAILS.InProgress', ['Data' => $Result], function ($m) use ($Count) {
             $m->from(env('MAIL_USERNAME'), 'MSPVN Auto Sender');
-            // $m->to('baokhanh.msp@outlook.com');
-            // $m->cc('v-tribt@microsoft.com');
-            // $m->cc('viethung.msp@outlook.com');
+            $m->to('baokhanh.msp@outlook.com');
+            $m->to('v-tribt@microsoft.com');
+            $m->cc('viethung.msp@outlook.com');
             $m->cc('minhduc.msp@outlook.com');
-            $m->to(env('MAIL_USERNAME'));
+            $m->cc(env('MAIL_USERNAME'));
             $Date = date("Y-m-d");
             $Content = "[DreamSpark Web][".$Date."] ".$Count." students are WAITING for Code'";
             $m->subject($Content);
