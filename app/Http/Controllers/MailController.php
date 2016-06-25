@@ -29,9 +29,8 @@ class MailController extends Controller
             // $m->cc('v-tribt@microsoft.com');
             // $m->cc('viethung.msp@outlook.com');
             $m->to('minhduc.msp@outlook.com');
-            $m->subject('$Count students are WAITING for AZURE');
-        });
-        //return "Finish";
+            $m->subject($Count." students are WAITING for AZURE'");
+        });       
     }
 
     public function sendReject()
