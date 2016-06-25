@@ -23,7 +23,7 @@ class MailController extends Controller
     	$Result = $Azure->queryEntities(env('AZURE_MAIN_TABLE'), $Query);
     	$Count = count($Result);
 
-    	Mail::send('EMAILS.InProgress', ['Data' => $Result], function ($m) {
+    	Mail::send('EMAILS.InProgress', ['Data' => $Result], function ($m) use ($Count) {
             $m->from(env('MAIL_USERNAME'), 'MSP Auto Sender');
             // $m->to('baokhanh.msp@outlook.com');
             // $m->cc('v-tribt@microsoft.com');
