@@ -5,6 +5,8 @@
 	<meta charset="utf-8"/>
 </head>
 <body>
+	<p>
+	<h1>Link Confirm: <a href="https://admin-mspvietnam.azurewebsites.net/">Admin Portal</a></p>
 	<table border="1">
 		<thead>
 			<th>STT</th>

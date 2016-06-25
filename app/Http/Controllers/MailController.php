@@ -24,12 +24,14 @@ class MailController extends Controller
     	$Count = count($Result);
 
     	Mail::send('EMAILS.InProgress', ['Data' => $Result], function ($m) use ($Count) {
-            $m->from(env('MAIL_USERNAME'), 'MSP Auto Sender');
+            $m->from(env('MAIL_USERNAME'), 'MSPVN Auto Sender');
             // $m->to('baokhanh.msp@outlook.com');
             // $m->cc('v-tribt@microsoft.com');
             // $m->cc('viethung.msp@outlook.com');
             $m->to('minhduc.msp@outlook.com');
-            $m->subject($Count." students are WAITING for AZURE'");
+            $Date = date("Y-m-d");
+            $Content = "[DreamSpark Web][".$Date."] ".$Count." students are WAITING for Code'"             
+            $m->subject($Content);
         });       
     }
 
