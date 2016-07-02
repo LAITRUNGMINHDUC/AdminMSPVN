@@ -161,7 +161,7 @@ Microsoft Student Partners Vietnam.<br>
             <p class='MsoNormal'>&nbsp;</td>
           <td style='height:37.5pt;border:none' width=0 height=50></td>
         </tr>
-        <!-- <tr style='height:37.5pt'>
+        <tr style='height:37.5pt'>
           <td style='border:none;padding:0in 0in 0in 0in' width=18>
             <p class='MsoNormal'>&nbsp;</td>
           <td style='height:37.5pt;border:none' width=0 height=50></td>
@@ -260,7 +260,7 @@ Microsoft Student Partners Vietnam.<br>
             <p class=MsoNormal>&nbsp;</p>
           </td>
           <td style='height:220.05pt;border:none' width=0 height=293></td>
-        </tr> -->
+        </tr>
         <tr style='height:53.5pt'>
           <td width=774 colspan=3 valign=top style='width:580.25pt;padding:0in 5.4pt 0in 5.4pt;
                           height:53.5pt'>
