@@ -46,7 +46,7 @@ class MailController extends Controller
         $Result = $Azure->queryEntities(env('AZURE_MAIN_TABLE'), $Query);  
 
         foreach ($Result as $Element) {
-            Mail::send('EMAILS.Reject', ['Data' => $Element], function ($m) {
+            Mail::send('EMAILS.Reject', ['Data' => $Element], function ($m) use ($Element){
                 $m->from(env('MAIL_USERNAME'), 'MSPVN Portal');
                 $m->replyTo('danglebaokhanh.msp@outlook.com', 'Mr. Bao Khanh');
                 $m->to($Element['Email'], $Element['Fullname']);                
