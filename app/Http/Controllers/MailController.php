@@ -24,7 +24,7 @@ class MailController extends Controller
     	$Count = count($Result);
 
     	Mail::send('EMAILS.InProgress', ['Data' => $Result], function ($m) use ($Count) {
-            $m->from(env('MAIL_USERNAME'), 'MSPVN Auto Sender');
+            $m->from(env('MAIL_USERNAME'), 'MSPVN Portal');            
             $m->to('danglebaokhanh.msp@outlook.com');
             $m->to('v-tribt@microsoft.com');
             $m->cc('viethung.msp@outlook.com');
@@ -36,8 +36,32 @@ class MailController extends Controller
         });       
     }
 
-    public function sendReject()
+    public function sendReject($ID)
     {
+        if ($ID != 'MinhDucDepTrai') 
+            return redirect('https://msp-vietnam.azurewebsites.net')->send();
 
+        $Azure = new CustomAzure();
+        $Query = "Status eq 'Reject Link' or Status eq 'Reject'";
+        $Result = $Azure->queryEntities(env('AZURE_MAIN_TABLE'), $Query);  
+
+        foreach ($Result as $Element) {
+            Mail::send('EMAILS.Reject', ['Data' => $Element], function ($m) use ($Count) {
+                $m->from(env('MAIL_USERNAME'), 'MSPVN Portal');
+                $m->replyTo('danglebaokhanh.msp@outlook.com', 'Mr. Bao Khanh');
+                $m->to($Element['Email'], $Element['Fullname']);                
+                $Date = date("Y-m-d");
+                $Content = "[MSPVN Portal][DreamSpark Code][".$Date."] Invalid information";
+                $m->subject($Content);
+            });       
+
+            if ($Element['Status'] = 'Reject')
+            {
+                $result = $Azure->tableClient->getEntity(env('AZURE_MAIN_TABLE'), "Students", $Element['RowKey']);
+                $entity = $result->getEntity();
+                $entity->setPropertyValue('Status', "Sent Reject");
+                $Azure->tableClient->updateEntity(env('AZURE_MAIN_TABLE'), $entity);
+            }
+        }        
     }
 }

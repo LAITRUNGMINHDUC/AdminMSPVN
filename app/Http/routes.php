@@ -27,8 +27,4 @@ Route::get('/Manage/Processed', ['uses'=>'ManageController@listProcessed']);
 Route::get('/Manage/Processed/{DateID}', ['uses' => 'ManageController@listDownload']);
 
 Route::get('Email/InProgress/{ID}', ['uses'=>'MailController@sendInProgress']);
-
-//Route::get('Azure/DeleteAndCreate', ['uses' => 'ManageController@deleteAndCreate']);
-//Route::get('Azure/Init', ['uses' => 'ManageController@initVariables']);
-//Mail
-//Route::get('/Mail', ['uses' => '']);
+Route::get('Email/Reject/{ID}', ['uses'=>'MailController@sendReject']);

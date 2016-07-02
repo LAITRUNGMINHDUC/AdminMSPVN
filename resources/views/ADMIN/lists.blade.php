@@ -125,6 +125,7 @@
                                     @endif
                                     <select class="form-control" onchange="changeColor(this);" name="<?php echo $Token; ?>">
                                         <option value="Valid" class="GREEN">Valid</option>
+                                        <option value="Reject Link" class="RED">Reject Link</option>
                                         <option value="Reject" class="RED">Reject</option>
                                     </select>
                                 </td>
