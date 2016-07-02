@@ -145,7 +145,7 @@ Hello <b>{{$Data['Fullname']}}</b>, <br><br>
 
 First of all, we would like to thank for your interest in Azure, the Microsoft's Cloud Technology.
 Unfortunately, <b>we can't verify your Student Status</b> via the <u>provided link</u> or <u>you have sent a request before</u>. Therefore, we could not give you an access to The Microsoft Cloud Technology. <br><br>
-Please re-check your link and update your Student Card <a href="{{url('/')}}/Account">HERE</a> <i>(Login to Portal first, and access this link)</i> to enjoy the Cloud Technology, Azure, from
+Please re-check your link and update your Student Card <a href="https://msp-vietnam.azurewebsites.net/Account">HERE</a> <i>(Login to Portal first, and access this link)</i> to enjoy the Cloud Technology, Azure, from
 Microsoft. This request is only available for <b>Student</b>. <br> <br>
 
 If you have any question regarding this subject, feel free to contact us via:

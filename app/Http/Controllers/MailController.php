@@ -28,10 +28,9 @@ class MailController extends Controller
             $m->to('danglebaokhanh.msp@outlook.com');
             $m->to('v-tribt@microsoft.com');
             $m->cc('viethung.msp@outlook.com');
-            $m->cc('minhduc.msp@outlook.com');
-            $m->cc(env('MAIL_USERNAME'));
+            $m->cc('minhduc.msp@outlook.com');            
             $Date = date("Y-m-d");
-            $Content = "[DreamSpark Web][".$Date."] ".$Count." students are WAITING for Code'";
+            $Content = "[DreamSpark Web][".$Date."] ".$Count." students => WAITING for Code'";
             $m->subject($Content);
         });       
     }
