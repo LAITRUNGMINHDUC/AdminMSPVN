@@ -55,7 +55,7 @@ class MailController extends Controller
                 $m->subject($Content);
             });       
 
-            if ($Element['Status'] = 'Reject')
+            if ($Element['Status'] == 'Reject')
             {
                 $result = $Azure->tableClient->getEntity(env('AZURE_MAIN_TABLE'), "Students", $Element['RowKey']);
                 $entity = $result->getEntity();
