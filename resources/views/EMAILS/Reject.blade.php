@@ -161,7 +161,7 @@ Microsoft Student Partners Vietnam.<br>
             <p class='MsoNormal'>&nbsp;</td>
           <td style='height:37.5pt;border:none' width=0 height=50></td>
         </tr>
-<!--         <tr style='height:37.5pt'>
+        <tr style='height:37.5pt'>
           <td style='border:none;padding:0in 0in 0in 0in' width=18>
             <p class='MsoNormal'>&nbsp;</td>
           <td style='height:37.5pt;border:none' width=0 height=50></td>
@@ -189,78 +189,20 @@ Microsoft Student Partners Vietnam.<br>
         <tr style='height:220.05pt'>
           <td width=119 valign=top style='width:89.15pt;padding:0in 5.4pt 0in 5.4pt;
                           height:220.05pt'>
-            <p class=MsoNormal><span style='position:absolute;z-index:251660288;
-                            margin-left:12px;margin-top:35px;width:72px;height:72px'><img width=72
-                            height=72 src="{{url('/')}}/assets/img/email-template/image014.png"></span><span style='position:absolute;
-                            z-index:251661312;margin-left:14px;margin-top:202px;width:72px;height:72px'><img
-                            width=72 height=72 src="{{url('/')}}/assets/img/email-template/image015.png"></span><span style='position:absolute;z-index:251662336;margin-left:13px;margin-top:118px;
-                            width:72px;height:72px'><img width=72 height=72 src="{{url('/')}}/assets/img/email-template/image016.png"></span>
-            </p>
           </td>
           <td width=655 colspan=2 valign=top style='width:491.1pt;padding:0in 5.4pt 0in 5.4pt;
                           height:220.05pt'>
             <p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span>
             </p>
             <p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span>
-            </p>
-            <p class=MsoListParagraphCxSpFirst style='margin-left:.2in;text-indent:-.1in;
-                          line-height:105%'><span style='font-size:10.0pt;line-height:105%;font-family:
-                          Wingdings'>§<span style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:10.0pt;line-height:105%;font-family:"Segoe UI",sans-serif'>Nullam
-                          ut sem a purus dapibus interdum. Vestibulum nunc augue, </span>
-            </p>
-            <p class=MsoListParagraphCxSpMiddle style='margin-left:.2in;text-indent:-.1in;
-                          line-height:105%'><span style='font-size:10.0pt;line-height:105%'>&nbsp;</span>
-            </p>
-            <p class=MsoListParagraphCxSpMiddle style='margin-left:.2in;text-indent:-.1in;
-                          line-height:105%'><span style='font-size:10.0pt;line-height:105%;font-family:
-                          Wingdings'>§<span style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:10.0pt;line-height:105%;font-family:"Segoe UI",sans-serif'>eu
-                          accumsan vel, porttitor aliquet sapien.</span>
-            </p>
-            <p class=MsoListParagraphCxSpMiddle style='margin-left:.2in;text-indent:-.1in;
-                          line-height:105%'><span style='font-size:10.0pt;line-height:105%'>&nbsp;</span>
-            </p>
-            <p class=MsoListParagraphCxSpMiddle style='margin-left:.2in;text-indent:-.1in;
-                          line-height:105%'><span style='font-size:10.0pt;line-height:105%;font-family:
-                          Wingdings'>§<span style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:10.0pt;line-height:105%;font-family:"Segoe UI",sans-serif'>Nullam
-                          ut sem a purus dapibus interdum. Vestibulum nunc augue, <br>
-                          <br>
-                        </span>
-            </p>
-            <p class=MsoListParagraphCxSpMiddle style='margin-left:.2in;text-indent:-.1in;
-                        line-height:105%'><span style='font-size:10.0pt;line-height:105%;font-family:
-                        Wingdings'>§<span style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:10.0pt;line-height:105%;font-family:"Segoe UI",sans-serif'>llamcorper
-                        eu accumsan vel, porttitor aliquet sapien.</span>
-            </p>
-            <p class=MsoListParagraphCxSpMiddle style='margin-left:.2in;text-indent:-.1in;
-                        line-height:105%'><span style='font-size:10.0pt;line-height:105%'>&nbsp;</span>
-            </p>
-            <p class=MsoListParagraphCxSpMiddle style='margin-left:.2in;text-indent:-.1in;
-                        line-height:105%'><span style='font-size:10.0pt;line-height:105%;font-family:
-                        Wingdings'>§<span style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:10.0pt;line-height:105%;font-family:"Segoe UI",sans-serif'>Nullam
-                        ut sem a purus dapibus interdum. </span>
-            </p>
-            <p class=MsoListParagraphCxSpMiddle style='margin-left:.2in;text-indent:-.1in;
-                        line-height:105%'><span style='font-size:10.0pt;line-height:105%;font-family:
-                        "Segoe UI",sans-serif'>&nbsp;</span>
-            </p>
-            <p class=MsoListParagraphCxSpMiddle style='margin-left:.2in;text-indent:-.1in;
-                        line-height:105%'><span style='font-size:10.0pt;line-height:105%;font-family:
-                        Wingdings'>§<span style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:10.0pt;line-height:105%;font-family:"Segoe UI",sans-serif'>Vestibulum
-                        nunc augue, ullamcorper eu accumsan vel,</span>
-            </p>
-            <p class=MsoListParagraphCxSpMiddle style='line-height:105%'><span style='font-size:10.0pt;line-height:105%'>&nbsp;</span>
-            </p>
-            <p class=MsoListParagraphCxSpMiddle style='margin-left:.2in;text-indent:-.1in;
-                          line-height:105%'><span style='font-size:10.0pt;line-height:105%;font-family:
-                          Wingdings'>§<span style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:10.0pt;line-height:105%;font-family:"Segoe UI",sans-serif'>llamcorper
-                          eu accumsan vel, porttitor aliquet sapien.</span>
-            </p>
+            </p>            
             <p class=MsoListParagraphCxSpLast style='line-height:105%'><span style='font-size:10.0pt;line-height:105%'>&nbsp;</span>
             </p>
             <p class=MsoNormal>&nbsp;</p>
           </td>
           <td style='height:220.05pt;border:none' width=0 height=293></td>
-        </tr> -->
+        </tr>
+
         <tr style='height:53.5pt'>
           <td width=774 colspan=3 valign=top style='width:580.25pt;padding:0in 5.4pt 0in 5.4pt;
                           height:53.5pt'>
